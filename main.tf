@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "acm_cert" {
-  source = "./Module"
+  source = "./module"
   primary_domain            = var.primary_domain
   subject_alternative_names = var.subject_alternative_names
   validation_method         = var.validation_method
